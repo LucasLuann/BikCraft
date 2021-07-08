@@ -1,5 +1,6 @@
 /*Estilos Gerais*/
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,26 +23,53 @@ p{
     border-color: #fff;
 }
 
+.btn-preto:hover {
+    color: #000;
+    border-color: #000;
+}
+  
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px auto;
+}
+
 /*Header*/
-.header{
+
+.header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #fec63e;
     padding: 15px 0;
+    z-index: 10;
 }
 
-.header_menu{
+.header_menu {
     text-align: right;
 }
 
-.header_menu ul li{
+.header_menu ul li {
    display: inline-block;
    margin-left: 25px;
    margin-top: 20px;
 }
 
-.header_menu ul li a{
+.header_menu ul li a {
     color: #000;
     font-weight: bold;
     text-transform: uppercase;
@@ -102,3 +130,50 @@ p{
     letter-spacing: .1em;
 }
 
+/*Produtos*/
+
+.produtos {
+    padding: 60px 0;
+}
+
+.produtos_lista li {
+    background: #fec63e;
+    text-align: center;
+}
+
+.produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+}
+
+.produtos_lista li h3:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 2px auto;
+}
+
+.produtos_lista li p {
+    padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+    background: #000;
+    padding: 20px;
+}
+
+.call {
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
